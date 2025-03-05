@@ -24,14 +24,3 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  # Stats
-  generate-stats:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: anuraghazra/github-readme-stats@master
-        with:
-          username: ${{ github.repository_owner }}
-          template: classic
-          show_icons: true
-          include_all_commits: true
